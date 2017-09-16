@@ -10,7 +10,6 @@ public class Contract {
     static final int DATABASE_VERSION = 1;
     static final String DATABASE_NAME = "habitDatabase";
 
-
     static final String CREATE_TABLE = "CREATE TABLE " + HabitData.TABLE_NAME + "(" + HabitData.KEY_ID +
             " INTEGER PRIMARY KEY" + "," + HabitData.HABIT_NAME + " TEXT" + ")";
 

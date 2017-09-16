@@ -49,7 +49,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public Cursor readData() {
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         String[] projection = {KEY_ID, HABIT_NAME};
-
         Cursor cursor = sqLiteDatabase.query(TABLE_NAME, projection, null, null, null, null, null);
         return cursor;
     }
